@@ -12,6 +12,26 @@ class App extends Component {
     // let someNumbers : number[] = [1, 2, 3, 4, 5];
     let someNumbers : Array<number> = [1, 2, 3, 4, 5];
 
+    // tuple with multi types.
+    let aTuple : [string, number] = ['123', 123];
+
+    // enum
+    enum Codes {first = 1, second = 2};
+
+    // any, avoid using, defeats purpose of TypeScript!
+    // let firstName : any = 'Seán';
+    let firstName : any = 123;
+
+    // void return type (functions should have a return type in TypeScript!)
+    const warning = () : void => {
+      console.log('Warning!');
+    }
+
+    // number return type
+    const addTwoNumbers = (a : number, b : number) : number => {
+      return a + b;
+    }
+
 
     return (
       <div className="App">
