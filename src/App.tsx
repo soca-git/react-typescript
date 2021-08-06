@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Components
+import Message from './Message';
+
+
 class App extends Component {
   render() {
     let firstValue : string;
@@ -41,6 +45,7 @@ class App extends Component {
           <p>The value {firstValue} is of type {typeof firstValue}!</p>
           <p>The value of {aNumber} is of type {typeof aNumber}!</p>
           <p>{someNumbers}</p>
+          <Message message='This is a simple message'/>
         </header>
       </div>
     );
