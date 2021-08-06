@@ -6,7 +6,21 @@ import './App.css';
 import Message from './Message';
 
 
+// 'extends' means inherit.
+// If unspecified, the type of Component is any.
 class App extends Component {
+
+  // This method is called prior to the component being rendered.
+  // Therefore it would be a good place to call an API for the data,
+  // so that it is returned and ready before rendering the component.
+  componentWillMount() {
+    console.log('Component mounting...')
+  }
+
+  componentDidMount() {
+    console.log('Component mounted!')
+  }
+
   render() {
     let firstValue : string;
     firstValue = 'Seán';
