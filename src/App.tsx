@@ -25,7 +25,7 @@ class App extends Component<MyProps, MyState> {
   constructor(props : any) {
     // Call parent constructor.
     super(props);
-    const initialMessage : string = 'This is a simple message';
+    const initialMessage : string = 'this is a simple message.';
 
     this.state = {
       status: 'OK',
@@ -83,7 +83,7 @@ class App extends Component<MyProps, MyState> {
           <p>The value {firstValue} is of type {typeof firstValue}!</p>
           <p>The value of {aNumber} is of type {typeof aNumber}!</p>
           <p>{someNumbers}</p>
-          <Message message={this.state.message}/>
+          <Message name='Seán' message={this.state.message}/>
         </header>
       </div>
     );
