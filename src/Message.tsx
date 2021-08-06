@@ -1,7 +1,9 @@
 import React from 'react';
+import { example } from 'yargs';
+import CreateMessageHoc from './Hoc';
 
 
-// interfaces do not exist in JS, only in TypeScript!
+// Interfaces do not exist in JS, only in TypeScript!
 interface UserMessage {
     name : string,
     message : string
@@ -17,3 +19,11 @@ const Message = (props : UserMessage) : any => {
 }
 
 export default Message;
+
+
+// ExampleMessage component for HOC chapter.
+const ExampleMessage = (props: UserMessage): any => <p>{props.name}: {props.message}</p>
+
+// Passing ExampleMessage component to CreateMessageHoc function
+// which is returning the HOC class component.
+export const HocMessage = CreateMessageHoc(ExampleMessage);
