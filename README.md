@@ -1,3 +1,11 @@
+
+# React: Using TypeScript.
+
+> A course on LinkedIn Learning by Emmanuel Henri.  
+> https://www.linkedin.com/learning/react-using-typescript/create-web-apps-using-the-react-component-approach-with-typescript
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
