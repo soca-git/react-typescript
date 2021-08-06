@@ -8,6 +8,8 @@ import Message from './Message';
 
 // Defining component interfaces for props and state.
 // Makes for good practice, combines well with static typing.
+// Can be classes too, but interfaces make more sense since we
+// are defining structure/contracts which the component will adhere to.
 interface MyProps {
 }
 
